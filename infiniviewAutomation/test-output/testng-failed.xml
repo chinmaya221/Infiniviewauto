@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="ie"/>
+  <listeners>
+    <listener class-name="utils.ListenerTest"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.infiniviewAutomation.tests.LoginpageTest">
+        <methods>
+          <include name="TestResult"/>
+          <include name="endReport"/>
+          <include name="startWebdriver"/>
+          <include name="testloginButtonFunctionalty_TC_04"/>
+          <include name="oneTimeTearDown"/>
+          <include name="ExtentReportStart"/>
+        </methods>
+      </class> <!-- com.infiniviewAutomation.tests.LoginpageTest -->
+      <class name="com.infiniviewAutomation.database.tests.KpidbTest">
+        <methods>
+          <include name="TestResult"/>
+        </methods>
+      </class> <!-- com.infiniviewAutomation.database.tests.KpidbTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

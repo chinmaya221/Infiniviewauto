@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite]">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="utils.ListenerTest"/>
+  </listeners>
+  <test name="InfiniviewTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.infiniviewAutomation.tests.LoginpageTest">
+        <methods>
+          <include name="testLoginPagewithBlanckcredentials_TC_03"/>
+          <include name="startWebdriver"/>
+          <include name="oneTimeTearDown"/>
+        </methods>
+      </class> <!-- com.infiniviewAutomation.tests.LoginpageTest -->
+    </classes>
+  </test> <!-- InfiniviewTest(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->
